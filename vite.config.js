@@ -2,6 +2,7 @@ const { defineConfig } = require("vite");
 const cesium = require("vite-plugin-cesium").default;
 
 module.exports = defineConfig({
+  base: "/A_Terns_Perspective/",
   plugins: [cesium()],
   server: {
     host: "127.0.0.1",

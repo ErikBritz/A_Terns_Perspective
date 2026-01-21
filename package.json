@@ -1,0 +1,22 @@
+{
+  "name": "animated_arctern",
+  "version": "1.0.0",
+  "description": "Animated Arctic Tern Cesium Visualization",
+  "main": "index.js",
+  "homepage": "https://erikbritz.github.io/A_Terns_Perspective/",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cesium": "^1.136.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.12",
+    "vite-plugin-cesium": "^1.2.11"
+  }
+}
