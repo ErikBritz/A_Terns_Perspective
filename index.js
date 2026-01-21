@@ -1,5 +1,11 @@
+
+// Set Cesium static asset base path for Vite/Vercel deployments
+window.CESIUM_BASE_URL = "/Assets";
 import * as Cesium from "cesium";
 import "cesium/Build/Cesium/Widgets/widgets.css";
+if (Cesium.buildModuleUrl && Cesium.buildModuleUrl.setBaseUrl) {
+	Cesium.buildModuleUrl.setBaseUrl("/Assets/");
+}
 
 Cesium.Ion.defaultAccessToken =
 	"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiJkZTFkZWI0NS05Yzk0LTQwZmEtYWQ2NC0zMzA4MmYxNzJjYjAiLCJpZCI6MzUyNzQyLCJpYXQiOjE3NjEwNzEzMTF9.BE9PLgfA-0BEP3cJp0Rp4uvhXUvxBRO4F18s6lpfAj0";
