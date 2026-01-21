@@ -221,7 +221,7 @@ if (birdSpeedEl) {
 }
 
 async function loadPath() {
-	const response = await fetch("arte_great_circle_path_3D.json");
+	const response = await fetch("/arte_great_circle_path_3D.json");
 	const pathData = await response.json();
 	const sortedData = pathData.sort((a, b) => a.time_period - b.time_period);
 	initInsetMap(sortedData);
@@ -310,7 +310,7 @@ async function loadPath() {
 		orientation: new Cesium.VelocityOrientationProperty(positionProperty),
 		viewFrom: CAMERA_OFFSET,
 		model: {
-			uri: "arctic_tern_model.glb",
+					   uri: "/arctic_tern_model.glb",
 			minimumPixelSize: 120,
 			runAnimations: true,
 			color: Cesium.Color.WHITE,
