@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Arctic Tern Tracking</title>
+    <link rel="stylesheet" href="/index.css">
+</head>
+
+<body>
+
+    <div id="loadingOverlay" role="status" aria-live="polite">
+        <div class="loadingText">Initializing Arctic Tern Tracking…</div>
+    </div>
+
+    <div id="birdSpeedControl">
+        <label for="birdSpeed">Bird speed</label>
+        <input id="birdSpeed" type="range" min="0.25" max="4" step="0.25" value="1">
+        <span id="birdSpeedValue">1×</span>
+    </div>
+
+    <div id="hud" aria-live="polite">
+        <span id="hudDate">Loading date…</span>
+        <span id="hudDistance">0 km</span>
+    </div>
+
+    <div id="insetMap" aria-hidden="true">
+        <div id="insetCesium"></div>
+    </div>
+
+    <div id="cesiumContainer"></div>
+
+    <script type="module" src="/index.js"></script>
+</body>
+
+</html>
